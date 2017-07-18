@@ -17,7 +17,7 @@ You only need to run these commands once. To spin up the development environment
 
 To run the test suite:
 
-    $ docker-compose run web ./manage.py test
+    $ docker-compose run web scripts/test
 
 ## Configuration
 

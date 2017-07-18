@@ -169,7 +169,9 @@ COMPRESS_PRECOMPILERS = (
     ('text/less', 'lessc {infile} {outfile}'),
 )
 
-TEST_RUNNER = 'django_behave.runner.DjangoBehaveTestSuiteRunner'
+# Disable because bdd tests don't work and this stops some normal Django test
+# options from working
+# TEST_RUNNER = 'django_behave.runner.DjangoBehaveTestSuiteRunner'
 
 AUTH_PROFILE_MODULE = 'core.UserProfile'
 ACCOUNT_ACTIVATION_DAYS = 7  # One week account activation window.
